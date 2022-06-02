@@ -1,0 +1,9 @@
+﻿@model string[]
+
+@foreach (var item in Model)
+{
+    @*<div style="border:1px solid red;">
+            @item
+        </div>*@
+    @Html.Partial("_Ogrenci", item)
+}
